@@ -56,16 +56,7 @@ a:hover{
     justify-content: space-between;
     align-items: center;
 }
-.contenedor_sobreMi{
-    width: 50vw;
-    display: flex;
-    border-color: blueviolet;
-    border-width: 3px;
-    font-size: 22px;
-    font-family: 'Cutive Mono', monospace;
-    line-height: 2rem;
-    text-align: justify;
-}
+
 .contenedor_perfil{
     width: 20vw;
     display: flex;
@@ -107,6 +98,12 @@ a:hover{
     font-size: 1.5rem;
     text-decoration: none;
     color: rgb(250, 250, 250);
-
-    
+}
+.contenedor_sobreMi{
+    width: 48vw;
+    border-color: blueviolet;
+    border-width: 3px;
+    font-size: 22px;
+    font-family: 'Cutive Mono', monospace;
+    line-height: 2rem;
 }
