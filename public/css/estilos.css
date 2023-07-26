@@ -49,6 +49,9 @@ header{
 a:hover{
     color: var(--tertiary-color);
 }
+#tachar{
+    text-decoration: line-through;
+}
 /*Imagen de fondo*/
 .imagen_fondo img{
     position: absolute;
@@ -110,11 +113,10 @@ a:hover{
     justify-content: center;
     align-items: center;
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-radius: 50%;
     font-size: 1.5rem;
     text-decoration: none;
-    color: rgb(250, 250, 250);
 }
 .contenedor_descripcion{
     width: 48vw;
@@ -153,7 +155,7 @@ h2{
 }
 h3{
     font-size: 32px;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 .tarjeta_datos li{
     margin-top: 1rem;
@@ -174,15 +176,17 @@ h3{
     display: flex;
 
 }
-.contenedor_iconos{
+.contenedor_lenguages{
 
     display: flex;
     flex-wrap: wrap;
+    margin-top: 0.5rem;
 }
-.contenedor_iconos div{
+.lenguage{
     width: 100px;
     height: 100px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--primary-color);
@@ -190,7 +194,39 @@ h3{
     margin-bottom: 1rem;
     border-radius: 1rem;
 }
-.icono i{
-    font-size: 3rem;
-    margin-bottom: 0,5rem;
+.lenguage a{
+    display: flex;
+}
+.lenguage i{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.lenguage:hover{
+    background-color: var(--tertiary-color);
+    transition: 0.5s;
+}
+footer{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+footer .contenedor_redes{
+    margin:0;
+}
+.arriba{
+    width: 3rem;
+    height: 3rem;
+    position:relative;
+    top: -35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: var(--tertiary-color);
 }

@@ -20,10 +20,10 @@
             </div>    
             <nav id="navbar">
                 <ul>
-                    <li><a href="#nombre">INICIO</a></li>
-                    <li><a href="">SKILLS</a></li>
-                    <li><a href="">FORMACION</a></li>
-                    <li><a href="">CONTACTO</a></li>
+                    <li><a href="#top">INICIO</a></li>
+                    <li><a href="#sobre_mi">SOBRE MI</a></li>
+                    <li><a id="tachar">PROYECTOS</a></li>
+                    <li><a href="#footer">CONTACTO</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,18 +37,18 @@
         <section class="inicio">      
             <div class="contenedor_perfil">
                 <img id="foto_perfil" src="public\img\foto_perfil.jpg" alt="Foto de perfil">
-                <p id="nombre">Ezequiel Emir Arroyo</p>
+                <p>Ezequiel Emir Arroyo</p>
                 <div class="contenedor_redes">
-                    <a class="red_icono" href="https://www.facebook.com/ezequielemir" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a class="red_icono" href="https://github.com/EzequielArroyo?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a class="red_icono" href="www.linkedin.com/in/ezequiel-emir-arroyo" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a class="bounce" href="https://www.facebook.com/ezequielemir" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="bounce" href="https://github.com/EzequielArroyo?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a class="bounce" href="www.linkedin.com/in/ezequiel-emir-arroyo" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </div>
             <div class="contenedor_descripcion">
                 <p id="sobreMi"></p>        
             </div>
         </section>
-        <section class="sobreMi">
+        <section id="sobre_mi" class="sobreMi">
             <h2>Sobre Mi</h2>
             <div class="contenedor_sobreMi">
                 <div class="col-izq">
@@ -85,29 +85,53 @@
                 <div class="col-der">
                     <div class="tarjeta_datos">
                         <h3>Conocimiento en</h3>
-                        <div class="contenedor_iconos">
-                            <div class="icono">
-                                <i class="fa-brands fa-html5 fa-xl" style="color: #fafafa;"></i>
+                        <p>Front-end:</p>
+                        <div class="contenedor_lenguages">
+                            <div class="lenguage">
+                                <i class="fa-brands fa-html5" style="color: #fafafa;"></i>
+                                HTML   
                             </div>
-                            <div class="icono">
+                            <div class="lenguage">
                                 <i class="fa-brands fa-css3-alt" style="color: #fafafa;"></i>
+                                CSS
                             </div>
-                            <div class="icono">
+                            <div class="lenguage">
                                 <i class="fa-brands fa-square-js" style="color: #fafafa;"></i>
+                                JAVA SCRIPT
                             </div>
-                            <div class="icono">
+                            <div class="lenguage">
                                 <i class="fa-brands fa-bootstrap" style="color: #fafafa;"></i>
+                                BOOTSTRAP
                             </div>
-                            <div class="icono">
+                            <div class="lenguage">
                                 <i class="fa-brands fa-react" style="color: #fafafa;"></i>
+                                REACT JS
                             </div> 
-                        </div>  
+                        </div> 
+                        <p>Back-end:</p>
+                        <div class="contenedor_lenguages">
+                            <div class="lenguage">
+                                <i class="fa-brands fa-python" style="color: #fafafa;"></i>
+                                PYTHON
+                            </div>
+                            <div class="lenguage">
+                                <i class="fa-solid fa-database" style="color: #fafafa;"></i>
+                                SQL
+                            </div>
+                                
+                        </div>      
                     </div>
                 </div>
         </section>
     </main>
-    <footer>
-
+    <footer id="footer">
+        <a class="arriba" href="#top"><i class="fa-solid fa-angle-up"></i></a>
+        <div class="contenedor_redes">
+            <a href="https://www.facebook.com/ezequielemir" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://github.com/EzequielArroyo?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="www.linkedin.com/in/ezequiel-emir-arroyo" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="tel:=5453765909"><i class="fa-solid fa-phone"></i></a>
+        </div>
     </footer>
     <script src="https://kit.fontawesome.com/0ea90798b2.js" crossorigin="anonymous"></script>
     <script src="public\js\programacion.js"></script>

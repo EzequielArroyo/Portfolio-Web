@@ -1,4 +1,4 @@
-const redes = Array.from (document.getElementsByClassName("red_icono"));
+const redes = Array.from (document.getElementsByClassName("bounce"));
 
 
 var i = 0; /* contador */
