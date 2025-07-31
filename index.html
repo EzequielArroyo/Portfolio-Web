@@ -1,92 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <link rel="stylesheet" href="public/css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/0ea90798b2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Header / Navigation Bar -->
   <header>
     <nav class="navbar">
       <div class="logo">MyPortfolio</div>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
   </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-image">
-      <img src="public/img/foto_perfil.jpg" alt="A picture of Ezequiel Arroyo" />
-    </div>
-    <div class="hero-content">
-      <h1>Hello, I'm Ezequiel Arroyo</h1>
-      <p>A passionate web developer building clean and fast websites.</p>
-      <a href="#projects" class="cta-button">View My Work</a>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/EzequielArroyo" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/EzequielArroyo" target="_blank"><i class="fab fa-github"></i></a>
+  <img class="background-image" src="public/img/backgroud-image.png" alt="">
+  <main>
+  
+    <section id="home" class="hero">
+      <div class="hero-image">
+        <img src="public/img/profile.jpg" alt="A picture of Ezequiel" />
       </div>
-    </div>
-  </section>
-
-  <!-- About Me Section -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      I'm a front-end developer who enjoys creating visually appealing and highly performant websites.
-      With a strong foundation in HTML, CSS, and JavaScript, I focus on building user-friendly interfaces
-      that are easy to navigate and pleasant to use. I'm constantly learning and experimenting with new
-      technologies to enhance my craft.
-    </p>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <h2>Languages & Technologies</h2>
-    <ul class="skills-list">
-      <li class="skill-item">HTML</li>
-      <li class="skill-item">CSS</li>
-      <li class="skill-item">JavaScript</li>
-      <li class="skill-item">Java</li>
-      <li class="skill-item">Python</li>
-      <li class="skill-item">React</li>
-    </ul>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-item">
-        <h3>Project Title</h3>
-        <p>Short description of the project and technologies used.</p>
-        <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+      <div class="hero-content">
+        <h1>Hello, I'm Ezequiel</h1>
+        <p>A passionate web developer building clean and fast websites.</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/EzequielArroyo" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/EzequielArroyo" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
       </div>
-      <!-- Add more project-item divs here -->
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <form action="#" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <section id="about" class="about">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I'm a front-end developer who enjoys creating visually appealing and
+        highly performant websites. With a strong foundation in HTML, CSS, and
+        JavaScript, I focus on building user-friendly interfaces that are easy
+        to navigate and pleasant to use. I'm constantly learning and
+        experimenting with new technologies to enhance my craft.
+      </p>
+    </section>
 
-  <!-- Footer -->
+    <section id="education" class="education">
+      <h2 class="section-title">Education</h2>
+      <div class="education-grid">
+        <div class="education-item">
+          <h3>Universidad Tecnológica Nacional (UTN) – Buenos Aires</h3>
+          <p>Information Systems Engineering – Currently in 4th year</p>
+        </div>
+        <div class="education-item">
+          <h3>Babar Bilingual School</h3>
+          <p>Bilingual High School Diploma in Social Sciences – Graduated in 2017</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2 class="section-title">Languages & Technologies</h2>
+      <ul class="skills-list">
+        <li class="skill-item">HTML</li>
+        <li class="skill-item">CSS</li>
+        <li class="skill-item">JavaScript</li>
+        <li class="skill-item">Java</li>
+        <li class="skill-item">Angular</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+        <div class="project-item">
+          <h3>Project Title</h3>
+          <p>Short description of the project and technologies used.</p>
+          <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+        </div>
+        <div class="project-item">
+          <h3>Project Title</h3>
+          <p>Short description of the project and technologies used.</p>
+          <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+        </div>
+        <div class="project-item">
+          <h3>Project Title</h3>
+          <p>Short description of the project and technologies used.</p>
+          <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+        </div>
+        <div class="project-item">
+          <h3>Project Title</h3>
+          <p>Short description of the project and technologies used.</p>
+          <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
   <footer>
     <p>&copy; 2025 Ezequiel Arroyo. All rights reserved.</p>
   </footer>
