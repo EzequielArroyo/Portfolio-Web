@@ -1,139 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="CV de Ezequiel Emir Arroyo">
-    <meta name="author" content="Ezequiel Emir Arroyo">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public\css\estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Space+Mono&display=swap" rel="stylesheet">
-    <title>Cv</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="public/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <div class="contenedor_header">
-            <div id="header_name">
-                <h1>Curriculum Vitale</h1>
-            </div>    
-            <nav id="navbar">
-                <ul>
-                    <li><a href="#top">INICIO</a></li>
-                    <li><a href="#sobre_mi">SOBRE MI</a></li>
-                    <li><a id="tachar">PROYECTOS</a></li>
-                    <li><a href="#footer">CONTACTO</a></li>
-                </ul>
-            </nav>
-        </div>
-        
-    </header>
-    <main>
-        <div class="imagen_fondo">
-            <div class="filtro"></div>
-            <img src="public\img\spaceBackground.jpg" alt="Imagen de Fondo">
-        </div>
-        <section class="inicio">      
-            <div class="contenedor_perfil">
-                <img id="foto_perfil" src="public\img\foto_perfil.jpg" alt="Foto de perfil">
-                <p>Ezequiel Emir Arroyo</p>
-                <div class="contenedor_redes">
-                    <a class="bounce" href="https://www.facebook.com/ezequielemir" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a class="bounce" href="https://github.com/EzequielArroyo?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a class="bounce" href="www.linkedin.com/in/ezequiel-emir-arroyo" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="contenedor_descripcion">
-                <p id="sobreMi"></p>        
-            </div>
-        </section>
-        <section id="sobre_mi" class="sobreMi">
-            <h2>Sobre Mi</h2>
-            <div class="contenedor_sobreMi">
-                <div class="col-izq">
-                    <div class="tarjeta_datos">
-                        <h3>Datos Personales</h3>
-                        <ul>
-                            <li>
-                                <strong class="alinear">Cumpleaños</strong>   19 de Noviembre.
-                            </li>
-                            <li>
-                                <strong class="alinear">Teléfono</strong>   1153765909.
-                            </li>
-                            <li>
-                                <strong class="alinear">Email</strong>   ee.arroyo19@gmail.com.
-                            </li>
-                            <li>
-                                <strong class="alinear">Estado civil</strong>   Soltero.
-                            </li>
-                    </div>
-                    <div class="tarjeta_datos">
-                        <h3>Formación</h3>
-                        <ul>
-                            <li>
-                                <strong>BABAR BILINGUAL SCHOOL</strong>
-                                <p>Bachiller Bilingüe de Ciencias Sociales | 2017.</p>
-                            </li>
-                            <li>
-                                <strong>UNIVERSIDAD TECNOLÓGICA NACIONAL DE BUENOS AIRES</strong>
-                                <p>Ingeniería en sistemas de información | 3º año. (en curso)</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-der">
-                    <div class="tarjeta_datos">
-                        <h3>Conocimiento en</h3>
-                        <p>Front-end:</p>
-                        <div class="contenedor_lenguages">
-                            <div class="lenguage">
-                                <i class="fa-brands fa-html5" style="color: #fafafa;"></i>
-                                HTML   
-                            </div>
-                            <div class="lenguage">
-                                <i class="fa-brands fa-css3-alt" style="color: #fafafa;"></i>
-                                CSS
-                            </div>
-                            <div class="lenguage">
-                                <i class="fa-brands fa-square-js" style="color: #fafafa;"></i>
-                                JAVA SCRIPT
-                            </div>
-                            <div class="lenguage">
-                                <i class="fa-brands fa-bootstrap" style="color: #fafafa;"></i>
-                                BOOTSTRAP
-                            </div>
-                            <div class="lenguage">
-                                <i class="fa-brands fa-react" style="color: #fafafa;"></i>
-                                REACT JS
-                            </div> 
-                        </div> 
-                        <p>Back-end:</p>
-                        <div class="contenedor_lenguages">
-                            <div class="lenguage">
-                                <i class="fa-brands fa-python" style="color: #fafafa;"></i>
-                                PYTHON
-                            </div>
-                            <div class="lenguage">
-                                <i class="fa-solid fa-database" style="color: #fafafa;"></i>
-                                SQL
-                            </div>
-                                
-                        </div>      
-                    </div>
-                </div>
-        </section>
-    </main>
-    <footer id="footer">
-        <a class="arriba" href="#top"><i class="fa-solid fa-angle-up"></i></a>
-        <div class="contenedor_redes">
-            <a href="https://www.facebook.com/ezequielemir" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://github.com/EzequielArroyo?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="www.linkedin.com/in/ezequiel-emir-arroyo" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="tel:=5453765909"><i class="fa-solid fa-phone"></i></a>
-        </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/0ea90798b2.js" crossorigin="anonymous"></script>
-    <script src="public\js\programacion.js"></script>
+  <!-- Header / Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-image">
+      <img src="public/img/foto_perfil.jpg" alt="A picture of Ezequiel Arroyo" />
+    </div>
+    <div class="hero-content">
+      <h1>Hello, I'm Ezequiel Arroyo</h1>
+      <p>A passionate web developer building clean and fast websites.</p>
+      <a href="#projects" class="cta-button">View My Work</a>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/EzequielArroyo" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/EzequielArroyo" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a front-end developer who enjoys creating visually appealing and highly performant websites.
+      With a strong foundation in HTML, CSS, and JavaScript, I focus on building user-friendly interfaces
+      that are easy to navigate and pleasant to use. I'm constantly learning and experimenting with new
+      technologies to enhance my craft.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Languages & Technologies</h2>
+    <ul class="skills-list">
+      <li class="skill-item">HTML</li>
+      <li class="skill-item">CSS</li>
+      <li class="skill-item">JavaScript</li>
+      <li class="skill-item">Java</li>
+      <li class="skill-item">Python</li>
+      <li class="skill-item">React</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-item">
+        <h3>Project Title</h3>
+        <p>Short description of the project and technologies used.</p>
+        <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+      </div>
+      <!-- Add more project-item divs here -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ezequiel Arroyo. All rights reserved.</p>
+  </footer>
 </body>
 </html>
