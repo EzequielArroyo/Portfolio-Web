@@ -11,6 +11,28 @@
 </head>
 
 <body>
+  <p id="viewport-width" style="
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-family: monospace;
+  font-size: 1rem;
+">
+  Viewport width: <span id="vw"></span>px
+</p>
+
+<script>
+  const updateWidth = () => {
+    document.getElementById("vw").textContent = window.innerWidth;
+  };
+  window.addEventListener("resize", updateWidth);
+  updateWidth();
+</script>
+
   <header>
     <nav class="navbar">
       <div class="logo logo-desktop">EZEQUIEL ARROYO</div>
