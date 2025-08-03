@@ -13,7 +13,7 @@
 <body>
   <p id="viewport-width" style="
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   z-index: 9999;
   background: black;
@@ -23,11 +23,13 @@
   font-size: 1rem;
 ">
   Viewport width: <span id="vw"></span>px
+  Viewport height: <span id="vh"></span>px
 </p>
 
 <script>
   const updateWidth = () => {
     document.getElementById("vw").textContent = window.innerWidth;
+    document.getElementById("vh").textContent = window.innerHeight;
   };
   window.addEventListener("resize", updateWidth);
   updateWidth();
