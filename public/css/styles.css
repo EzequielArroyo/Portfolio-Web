@@ -67,10 +67,10 @@ footer {
   gap: 1rem;
 }
 
-.nav-links a {
+.nav-link {
   font-weight: bold;
 }
-.nav-links a:hover {
+.nav-link:hover {
   color: var(--color-accent-hover);
   transition: color 0.3s ease, transform 0.2s ease;
 }
@@ -200,7 +200,7 @@ main a:hover {
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  background-color: #f0f0f0;
+  background-color: white;
 }
 
 .contact-list li {
@@ -229,28 +229,34 @@ footer {
     display: block;
   }
   .navbar {
-    height: 100px;
+    height: 70px;
   }
   .nav-links {
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
     overflow: hidden;
     max-height: 0;
     padding: 0;
+    gap: 0;
     transition: max-height 0.4s ease, padding 0.4s ease;
     width: 100%;
     background-color: white;
     position: absolute;
-    top: 60px;
+    top: 70px;
     left: 0;
     z-index: 10;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+  .nav-link{
+    font-size: 1.2rem;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #eee;
+  }
 
   .nav-links.active {
-    max-height: 500px;
-    padding: 1rem 0;
+    max-height: 275px;
   }
 
   .menu-toggle {
