@@ -6,7 +6,6 @@
   --color-accent-hover: #8e9ab4;
   --color-background-section: white;
   --color-background-secondary: rgba(200, 205, 215, 0.95);
-
 }
 
 * {
@@ -14,7 +13,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html {
   width: 100vw;
   scroll-behavior: smooth;
 }
@@ -23,19 +22,19 @@ body {
   background-color: #f0f0f0;
   font-family: sans-serif;
 }
-ul{
+ul {
   list-style: none;
 }
-a{
+a {
   color: var(--color-accent);
   text-decoration: none;
 }
-.icon{
+.icon {
   color: var(--color-accent);
 }
 /* Navigation Bar styles */
 header {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   position: sticky;
   top: 0;
@@ -49,10 +48,15 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
-
-.navbar .logo {
+.menu-toggle {
+  display: none;
+}
+.logo-mobile {
+  display: none;
+}
+.logo {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--color-accent);
@@ -64,18 +68,18 @@ footer {
 }
 
 .nav-links a {
-  font-weight:bold;
+  font-weight: bold;
 }
 .nav-links a:hover {
   color: var(--color-accent-hover);
   transition: color 0.3s ease, transform 0.2s ease;
 }
 .background-image {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -2;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
 }
 main {
   justify-self: center;
@@ -91,7 +95,6 @@ section {
   font-size: 2rem;
   margin-bottom: 2rem;
   color: var(--color-heading);
-  
 }
 section h3 {
   margin-bottom: 0.5rem;
@@ -112,7 +115,7 @@ main a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height:100vh;
+  height: 100vh;
   background-image: url(../img/backgroud-image.png);
   background-size: cover;
   background-position: center;
@@ -155,7 +158,7 @@ main a:hover {
 }
 
 /* Education section styles */
-.education-grid{
+.education-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
@@ -176,7 +179,7 @@ main a:hover {
   background: white;
   padding: 0.75rem 1.5rem;
   border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Projects section */
@@ -196,7 +199,7 @@ main a:hover {
 .project-item {
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   background-color: #f0f0f0;
 }
 
@@ -218,36 +221,64 @@ footer {
   color: #666;
 }
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
+  @media (max-width: 768px) {
+    .logo-desktop {
+      display: none;
+    }
 
-  .hero {
-    height: auto;
-    padding: 2rem;
-  }
+    .logo-mobile {
+      display: block;
+    }
 
-  .hero-image img {
-    max-width: 200px;
-  }
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      overflow: hidden;
+      max-height: 0;
+      padding: 0;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+      width: 100%;
+      background-color: white;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      z-index: 10;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-  .education-grid {
-    grid-template-columns: 1fr;
-  }
+    .nav-links.active {
+      max-height: 500px;
+      padding: 1rem 0;
+    }
 
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-  section{
-    padding: 1rem 2rem;
-  }
-  .section-title{
-    text-align: center;
+    .menu-toggle {
+      display: block;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    .hero {
+      height: auto;
+      padding: 2rem;
+    }
+
+    .hero-image img {
+      max-width: 200px;
+    }
+
+    .education-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
+    section {
+      padding: 1rem 2rem;
+    }
+    .section-title {
+      text-align: center;
+    }
   }
 }

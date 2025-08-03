@@ -7,12 +7,18 @@
   <title>Ezequiel Arroyo</title>
   <link rel="stylesheet" href="public/css/styles.css" />
   <script src="https://kit.fontawesome.com/0ea90798b2.js" crossorigin="anonymous"></script>
+  <script src="public/js/programacion.js"></script>
 </head>
 
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo">EZEQUIEL ARROYO</div>
+      <div class="logo logo-desktop">EZEQUIEL ARROYO</div>
+      <div class="logo logo-mobile">EA</div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
       <ul class="nav-links">
         <li><a href="#top">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
@@ -22,20 +28,20 @@
       </ul>
     </nav>
   </header>
-   <section id="home" class="hero">
-      <div class="hero-image">
-        <img src="public/img/profile.jpg" alt="A picture of Ezequiel" />
+  <section id="home" class="hero">
+    <div class="hero-image">
+      <img src="public/img/profile.jpg" alt="A picture of Ezequiel" />
+    </div>
+    <div class="hero-content">
+      <h1>Hello, I'm Ezequiel</h1>
+      <p>A full stack web developer</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/ezequiel-emir-arroyo" target="_blank"><i
+            class="icon fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/EzequielArroyo" target="_blank"><i class="icon fa-brands fa-github"></i></a>
       </div>
-      <div class="hero-content">
-        <h1>Hello, I'm Ezequiel</h1>
-        <p>A full stack web developer</p>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/ezequiel-emir-arroyo" target="_blank"><i
-              class="icon fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/EzequielArroyo" target="_blank"><i class="icon fa-brands fa-github"></i></a>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
   <main>
 
     <section id="about" class="about">
