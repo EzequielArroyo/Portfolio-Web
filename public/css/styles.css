@@ -217,3 +217,37 @@ footer {
   font-size: 0.9rem;
   color: #666;
 }
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero {
+    height: auto;
+    padding: 2rem;
+  }
+
+  .hero-image img {
+    max-width: 200px;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+  section{
+    padding: 1rem 2rem;
+  }
+  .section-title{
+    text-align: center;
+  }
+}
