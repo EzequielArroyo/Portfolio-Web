@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ezequiel Arroyo</title>
+  <link rel="stylesheet" href="public/css/styles.css" />
+  <script src="https://kit.fontawesome.com/0ea90798b2.js" crossorigin="anonymous"></script>
+  <script src="public/js/scripts.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo logo-desktop">EZEQUIEL ARROYO</div>
+      <div class="logo logo-mobile">EA</div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <ul class="nav-links">
+        <li class="nav-link"><a href="#top">HOME</a></li>
+        <li class="nav-link"><a href="#about">ABOUT</a></li>
+        <li class="nav-link"><a href="#skills">SKILLS</a></li>
+        <li class="nav-link"><a href="#projects">PROJECTS</a></li>
+        <li class="nav-link"><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <p id="viewport-width" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  background: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-family: monospace;
+  font-size: 1rem;
+">
+    Viewport width: <span id="vw"></span>px
+    Viewport height: <span id="vh"></span>px
+  </p>
+
+  <script>
+    const updateWidth = () => {
+      document.getElementById("vw").textContent = window.innerWidth;
+      document.getElementById("vh").textContent = window.innerHeight;
+    };
+    window.addEventListener("resize", updateWidth);
+    updateWidth();
+  </script>
+  <section id="home" class="hero">
+    <div class="hero-image">
+      <img src="public/img/profile.jpg" alt="A picture of Ezequiel" />
+    </div>
+    <div class="hero-content">
+      <h1>Hello, I'm Ezequiel</h1>
+      <p>A full stack web developer</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/ezequiel-emir-arroyo" target="_blank"><i
+            class="icon fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/EzequielArroyo" target="_blank"><i class="icon fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+  <main>
+
+    <section id="about" class="about">
+      <h2 class="section-title">ABOUT ME</h2>
+      <p>
+        I'm a web developer in my 4th year of the Information Systems Engineering program at UTN Buenos Aires. I have a
+        strong foundation in HTML, CSS, and Java—particularly with Spring Boot—and enjoy exploring new technologies to
+        keep improving.
+      </p>
+      </p>
+      <p>
+        Looking for a role where I can contribute to projects, grow professionally, and join a collaborative team.
+        I'm open to working with new languages, frameworks, or technologies.
+      </p>
+    </section>
+
+    <section id="education" class="education">
+      <h2 class="section-title">EDUCATION</h2>
+      <div class="education-grid">
+        <div class="education-item">
+          <h3>Universidad Tecnológica Nacional (UTN) – Buenos Aires</h3>
+          <p>Information Systems Engineering – Currently in 4th year</p>
+        </div>
+        <div class="education-item">
+          <h3>Babar Bilingual School</h3>
+          <p>Bilingual High School Diploma in Social Sciences – Graduated in 2017</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2 class="section-title">SKILLS</h2>
+      <ul class="skills-list">
+        <li class="skill-item" data-skill="HTML">HTML</li>
+        <li class="skill-item" data-skill="CSS">CSS</li>
+        <li class="skill-item" data-skill="JavaScript">JavaScript</li>
+        <li class="skill-item" data-skill="Java">Java</li>
+        <li class="skill-item" data-skill="SpringBoot">SpringBoot</li>
+        <li class="skill-item" data-skill="Angular">Angular</li>
+        <li class="skill-item" data-skill="Git">Git</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="section-title">PROJETCS</h2>
+      <div class="project-grid">
+        <div class="project-item" data-tags="Java SpringBoot Git">
+          <div class="project-content">
+            <h3>MetaMapa - Sistema de Mapeo Colaborativo</h3>
+            <p>Sistema desarrollado en Java con Spring Boot para el mapeo colaborativo de hechos geolocalizados. Permite
+              integrar datos desde múltiples fuentes y fue creado como parte del TPA DDSI 2025 (UTN).</p>
+            </div>
+          <footer class="project-footer">
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Git</span>
+            </div>
+            <a href="#" target="_blank"><s>Live Demo</s></a> | <a href="#" target="_blank"><s>GitHub</s></a>
+          </footer>
+        </div>
+        <div class="project-item" data-tags="html css javascript git">
+          <div class="project-content">
+            <h3>Portfolio Personal</h3>
+            <p>Portfolio personal inspirado en una estética minimalista, con diseño responsive, filtros interactivos y código modular.</p>
+            </div>
+          <footer class="project-footer">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Git</span>
+            </div>
+            <a href="https://github.com/EzequielArroyo/Portfolio-Web.git" target="_blank">GitHub</a>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">CONTACT</h2>
+      <ul class="contact-list">
+        <li>
+          <i class="icon fa-brands fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/EzequielArroyo" target="_blank">in/ezequiel-emir-arroyo</a>
+        </li>
+        <li>
+          <i class="icon fa-solid fa-envelope"></i>
+          <a href="mailto:ee.arroyo19@gmail.com" target="_blank">ee.arroyo19@gmail.com </a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+  <footer class="footer-page">
+    <p>&copy; 2025 Ezequiel Arroyo. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
