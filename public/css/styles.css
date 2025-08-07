@@ -266,13 +266,41 @@ main a:hover {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-.tag-html { background-color: #fde6d8; color: #d35400; }
-.tag-css { background-color: #e0f7fa; color: #00796b; }
-.tag-javascript { background-color: #fff9c4; color: #f57f17; }
-.tag-java { background-color: #e8eaf6; color: #3f51b5; }
-.tag-springboot { background-color: #e6f4ea; color: #2e7d32; }
-.tag-angular { background-color: #fbe9e7; color: #d84315; }
-.tag-git { background-color: #fce4ec; color: #c2185b; }
+.tag-html {
+  background-color: #E44D26; /* HTML naranja-rojizo oficial */
+  color: #ffffff;
+}
+
+.tag-css {
+  background-color: #264DE4; /* CSS azul oficial */
+  color: #ffffff;
+}
+
+.tag-javascript {
+  background-color: #F7DF1E; /* JS amarillo oficial */
+  color: #000000;
+}
+
+.tag-java {
+  background-color: #5382A1; /* Azul oficial Java */
+  color: #ffffff;
+}
+
+.tag-springboot {
+  background-color: #6DB33F; /* Verde oficial Spring Boot */
+  color: #ffffff;
+}
+
+.tag-angular {
+  background-color: #DD0031; /* Rojo oficial Angular */
+  color: #ffffff;
+}
+
+.tag-git {
+  background-color: #F05033; /* Naranja-rojizo oficial Git */
+  color: #ffffff;
+}
+
 
 .project-tags {
   display: flex;
