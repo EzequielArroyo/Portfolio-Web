@@ -4,6 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ezequiel Arroyo</title>
+  <script>
+  (function () {
+    try {
+      var stored = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var theme = stored || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {
+    }
+  })();
+</script>
   <link rel="stylesheet" href="public/css/styles.css" />
   <script src="https://kit.fontawesome.com/0ea90798b2.js" crossorigin="anonymous"></script>
   <script src="public/js/scripts.js"></script>
@@ -59,11 +70,16 @@
     <div class="hero-content">
       <h1>Hello, I'm Ezequiel</h1>
       <p>A full stack web developer</p>
+      <!--
       <div class="social-icons">
         <a href="https://www.linkedin.com/in/ezequiel-emir-arroyo" target="_blank"><i
             class="icon fa-brands fa-linkedin"></i></a>
         <a href="https://github.com/EzequielArroyo" target="_blank"><i class="icon fa-brands fa-github"></i></a>
       </div>
+    -->
+      <a href="public/docs/Ezequiel_Arroyo_CV.pdf" target="_blank" download class="btn-download">
+      <i class="fa-solid fa-file-arrow-down"></i> Download CV
+    </a>
     </div>
   </section>
   <main>
