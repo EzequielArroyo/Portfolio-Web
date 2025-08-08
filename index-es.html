@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="light">
 
 <head>
   <meta charset="UTF-8" />
@@ -15,7 +15,7 @@
     <nav class="navbar">
       <div class="logo logo-desktop">EZEQUIEL ARROYO</div>
       <div class="logo logo-mobile">EA</div>
-      <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="menu-toggle">
         <i class="fa-solid fa-bars"></i>
       </div>
 
@@ -28,6 +28,15 @@
       </ul>
     </nav>
   </header>
+
+  <aside class="utility-bar" aria-label="Utility Bar">
+    <button id="themeToggle" class="util-btn" aria-label="change theme" title="Tema claro/oscuro">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+    <a href="index.html" class="util-btn" aria-label="change language" title="ES / EN">
+      <i class="fa-solid fa-globe"></i>
+    </a>
+  </aside>
 
   <p id="viewport-width"
     style="position: fixed; bottom: 0; left: 0; z-index: 9999; background: black; color: white; padding: 0.5rem 1rem; font-family: monospace; font-size: 1rem;">
