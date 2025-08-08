@@ -61,6 +61,8 @@
 
   --tag-git-bg: #F05033;
   --tag-git-fg: #ffffff;
+
+  --background-image: url(../img/background-image-light.png);
 }
 
 /* Dark theme overrides */
@@ -111,6 +113,8 @@ html[data-theme="dark"] {
   --tag-spring-fg: #fff;
   --tag-angular-fg: #fff;
   --tag-git-fg: #fff;
+
+  --background-image: url(../img/background-image-dark.png);
 }
 
 /* ==================== Base / Resets ==================== */
@@ -191,7 +195,7 @@ main a:hover { text-decoration: underline; }
   align-items: center;
   text-align: center;
   height: calc(100vh - 60px);
-  background-image: url(../img/backgroud-image.png);
+  background-image: var(--background-image);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
