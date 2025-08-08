@@ -44,4 +44,34 @@ function setupSkillFilter() {
 
 document.addEventListener('DOMContentLoaded', () => {
   setupSkillFilter();
+  setUpMenuToggle();
+  setUpThemeToggle();
 });
+
+function setUpMenuToggle() {
+  const menuButton = document.querySelector('.menu-toggle');
+  menuButton.addEventListener('click', toggleMenu);
+}
+
+function setUpThemeToggle() {
+  const themeToggle = document.getElementById('themeToggle');
+  themeToggle.addEventListener('click', toggleTheme);
+}
+
+function toggleTheme() {
+  const current = document.documentElement.getAttribute('data-theme') || 'light';
+  const newTheme = current === 'light' ? 'dark' : 'light';
+  setTheme(newTheme);
+}
+function setTheme(theme){
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', theme);
+  updateButtonIcon(theme);
+}
+function updateButtonIcon(theme){
+  const icon = document.querySelector('#themeToggle i');
+  if (icon) {
+    icon.classList.toggle('fa-moon', theme !== 'dark');
+    icon.classList.toggle('fa-sun', theme === 'dark');
+  }
+}
