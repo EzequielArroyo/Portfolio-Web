@@ -42,10 +42,18 @@ function setupSkillFilter() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  initTheme();
   setupSkillFilter();
   setUpMenuToggle();
   setUpThemeToggle();
 });
+
+function initTheme() {
+  const stored = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const theme = stored || (prefersDark ? 'dark' : 'light');
+  setTheme(theme);
+}
 
 function setUpMenuToggle() {
   const menuButton = document.querySelector('.menu-toggle');
