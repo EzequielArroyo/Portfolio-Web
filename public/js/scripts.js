@@ -20,7 +20,6 @@ function filterProjectsBySkills() {
   });
 }
 
-
 function setupSkillFilter() {
   const skillButtons = document.querySelectorAll('.skill-item');
 
@@ -63,11 +62,13 @@ function toggleTheme() {
   const newTheme = current === 'light' ? 'dark' : 'light';
   setTheme(newTheme);
 }
+
 function setTheme(theme){
   document.documentElement.setAttribute('data-theme', theme);
   localStorage.setItem('theme', theme);
   updateButtonIcon(theme);
 }
+
 function updateButtonIcon(theme){
   const icon = document.querySelector('#themeToggle i');
   if (icon) {
