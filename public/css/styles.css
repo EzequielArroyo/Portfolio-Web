@@ -1,30 +1,22 @@
-/* =========================================================
-   THEME TOKENS (Light default) — switch with [data-theme="dark"]
-   ========================================================= */
 :root {
-  /* Text */
   --color-text: #1a1a1a;
   --color-heading: #333333;
   --color-subheading: #667799;
 
-  /* Accent */
   --color-accent: #005f99;
   --color-accent-light: #3388cc;
   --color-accent-hover: #8e9ab4;
 
-  /* Surfaces & Backgrounds */
-  --bg-page: #e6e9ef; /* body */
-  --bg-main: #ffffff; /* main container */
-  --surface: #ffffff; /* cards, header, buttons */
-  --surface-contrast: #ffffff; /* utility surface (if different later) */
+  --bg-page: #e6e9ef;
+  --bg-main: #ffffff;
+  --surface: #ffffff;
+  --surface-contrast: #ffffff;
 
-  /* Borders */
   --border-weak: rgba(0, 0, 0, 0.06);
   --border-weaker: rgba(0, 0, 0, 0.03);
   --border-utility: rgba(0, 0, 0, 0.1);
   --footer-border: rgba(0, 0, 0, 0.1);
 
-  /* Shadows */
   --shadow-0: 0 0 10px rgba(0, 0, 0, 0.04);
   --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.08);
   --shadow-2: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -32,14 +24,11 @@
   --shadow-header: 0 2px 6px rgba(0, 0, 0, 0.08);
   --shadow-navbar: 0 2px 4px rgba(0, 0, 0, 0.05);
 
-  /* Secondary bg (hover chips) */
   --bg-secondary: rgba(200, 205, 215, 0.95);
 
-  /* Footer */
   --footer-bg: rgba(255, 255, 255, 0.85);
   --footer-text: #666;
 
-  /* Tag palette (brand-like) */
   --tag-html-bg: #e44d26;
   --tag-html-fg: #ffffff;
 
@@ -64,19 +53,18 @@
   --background-image: url(../img/background-image-light.png);
 }
 
-/* Dark theme overrides */
 html[data-theme="dark"] {
   --color-text: #e8ecf1;
   --color-heading: #f3f6fb;
   --color-subheading: #aebad1;
 
-  --color-accent: #5ab8ff;
-  --color-accent-light: #8ed0ff;
-  --color-accent-hover: #a7c1ff;
+  --color-accent: #005f99;
+  --color-accent-light: #3388cc;
+  --color-accent-hover: #8e9ab4;
 
   --bg-page: #0f1420;
-  --bg-main: #0f172a; /* slate-ish */
-  --surface: #111827; /* gray-900 */
+  --bg-main: #0f172a;
+  --surface: #111827; 
   --surface-contrast: #0b1220;
 
   --border-weak: rgba(255, 255, 255, 0.08);
@@ -96,7 +84,7 @@ html[data-theme="dark"] {
   --footer-bg: rgba(17, 24, 39, 0.8);
   --footer-text: #99a3b6;
 
-  /* Tags tuned for dark contrast (optional keep brand colors) */
+  /*
   --tag-html-bg: #b2563a;
   --tag-css-bg: #3a5ed0;
   --tag-js-bg: #ccb81c;
@@ -112,20 +100,21 @@ html[data-theme="dark"] {
   --tag-spring-fg: #fff;
   --tag-angular-fg: #fff;
   --tag-git-fg: #fff;
-
+*/
   --background-image: url(../img/background-image-dark.png);
 }
 
-/* ==================== Base / Resets ==================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   width: 100%;
   scroll-behavior: smooth;
 }
+
 body {
   background-color: var(--bg-page);
   font-family: sans-serif;
@@ -134,18 +123,20 @@ body {
 ul {
   list-style: none;
 }
+
 a {
   color: var(--color-accent);
   text-decoration: none;
 }
+
 a:hover {
   color: var(--color-accent-hover);
 }
+
 .icon {
   color: var(--color-accent);
 }
 
-/* ==================== Header / Nav ==================== */
 header {
   background-color: var(--surface);
   box-shadow: var(--shadow-header);
@@ -162,8 +153,11 @@ header {
 }
 
 .menu-toggle {
+  color: var(--color-accent);
+
   display: none;
 }
+
 .logo-mobile {
   display: none;
 }
@@ -178,10 +172,12 @@ header {
   display: flex;
   gap: 1rem;
 }
+
 .nav-link {
   font-weight: bold;
   color: var(--color-text);
 }
+
 .nav-link:hover {
   color: var(--color-accent-hover);
   transition: color 0.3s ease, transform 0.2s ease;
@@ -194,8 +190,7 @@ header {
   height: 100vh;
   z-index: -2;
 }
-
-/* ==================== Main / Sections ==================== */
+/* MAIN */
 main {
   justify-self: center;
   max-width: 1440px;
@@ -224,7 +219,7 @@ main a:hover {
   text-decoration: underline;
 }
 
-/* ==================== Hero ==================== */
+/* HERO*/
 .hero {
   display: flex;
   flex-direction: column;
@@ -257,7 +252,6 @@ main a:hover {
   color: var(--color-subheading);
 }
 
-/* Icons */
 .social-icons {
   display: flex;
   margin-bottom: 3rem;
@@ -288,7 +282,7 @@ main a:hover {
 }
 
 
-/* ==================== About / Education ==================== */
+/* ABOUT ME */
 .about p {
   font-size: 24px;
   line-height: 1.8;
@@ -302,14 +296,13 @@ main a:hover {
   max-width: 550px;
 }
 
-/* ==================== Shared Surface Utility ==================== */
 .contrast-surface {
   background-color: var(--surface-contrast);
   box-shadow: var(--shadow-2);
   border: 1px solid var(--border-weak);
 }
 
-/* ==================== Skills ==================== */
+/* SKILLS */
 .skills-list {
   padding: 0;
   display: flex;
@@ -342,7 +335,7 @@ main a:hover {
   color: white;
 }
 
-/* ==================== Projects ==================== */
+/* PROJECTS */
 .projects {
   display: flex;
   flex-direction: column;
@@ -391,7 +384,6 @@ main a:hover {
   transition: opacity 0.3s ease, filter 0.3s ease;
 }
 
-/* ==================== Tags ==================== */
 .tag {
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
@@ -400,7 +392,6 @@ main a:hover {
   box-shadow: var(--shadow-1);
 }
 
-/* Per-tech via variables */
 .tag-html {
   background-color: var(--tag-html-bg);
   color: var(--tag-html-fg);
@@ -436,7 +427,7 @@ main a:hover {
   margin: 1rem 0;
 }
 
-/* ==================== Contact / Footer ==================== */
+/* FOOTER */
 .contact-list li {
   margin: 10px 0;
   display: flex;
@@ -458,12 +449,12 @@ main a:hover {
   border-top: 1px solid var(--footer-border);
 }
 
-/* ==================== Utility bar ==================== */
+/* UTILITY BAR */
 .utility-bar {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  left: 18px;
+  right: 18px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -483,12 +474,12 @@ main a:hover {
   transition: transform 0.15s ease, box-shadow 0.15s ease;
   color: var(--color-text);
 }
+
 .util-btn:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-3);
 }
 
-/* ==================== Responsive ==================== */
 @media (max-width: 768px) {
   .logo-desktop {
     display: none;
@@ -528,6 +519,8 @@ main a:hover {
     max-height: 275px;
   }
   .menu-toggle {
+  color: var(--color-accent);
+
     display: block;
     font-size: 1.8rem;
     cursor: pointer;
