@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="es" data-theme="light">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ezequiel Arroyo</title>
   <script>
-    (function () {
-      try {
-        var stored = localStorage.getItem('theme');
-        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        var theme = stored || (prefersDark ? 'dark' : 'light');
-        document.documentElement.setAttribute('data-theme', theme);
-      } catch (e) {
-      }
-    })();
-  </script>
+  (function () {
+    try {
+      var stored = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var theme = stored || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {
+      // si algo falla, dejamos el que venga por defecto en el HTML
+    }
+  })();
+</script>
   <link rel="stylesheet" href="public/css/styles.css" />
   <script src="https://kit.fontawesome.com/0ea90798b2.js" crossorigin="anonymous"></script>
   <script src="public/js/scripts.js"></script>
@@ -31,30 +32,30 @@
       </div>
 
       <ul class="nav-links">
-        <li class="nav-link"><a href="#top">HOME</a></li>
-        <li class="nav-link"><a href="#about">ABOUT</a></li>
-        <li class="nav-link"><a href="#skills">SKILLS</a></li>
-        <li class="nav-link"><a href="#projects">PROJECTS</a></li>
-        <li class="nav-link"><a href="#contact">CONTACT</a></li>
+        <li class="nav-link"><a href="#top">INICIO</a></li>
+        <li class="nav-link"><a href="#about">SOBRE MÍ</a></li>
+        <li class="nav-link"><a href="#skills">HABILIDADES</a></li>
+        <li class="nav-link"><a href="#projects">PROYECTOS</a></li>
+        <li class="nav-link"><a href="#contact">CONTACTO</a></li>
       </ul>
     </nav>
   </header>
 
   <aside class="utility-bar" aria-label="Utility Bar">
-    <button id="themeToggle" class="util-btn" aria-label="change theme" title="Light/Dark theme">
+    <button id="themeToggle" class="util-btn" aria-label="change theme" title="Tema claro/oscuro">
       <i class="fa-solid fa-moon"></i>
     </button>
-    <a href="index-es.html" class="util-btn" aria-label="change language" title="ES / EN">
+    <a href="index.html" class="util-btn" aria-label="change language" title="ES / EN">
       <i class="fa-solid fa-globe"></i>
     </a>
   </aside>
 
   <p id="viewport-width"
     style="position: fixed; bottom: 0; left: 0; z-index: 9999; background: black; color: white; padding: 0.5rem 1rem; font-family: monospace; font-size: 1rem;">
-    Viewport width: <span id="vw"></span>px
-    Viewport height: <span id="vh"></span>px
+    Ancho de pantalla: <span id="vw"></span>px
+    Alto de pantalla: <span id="vh"></span>px
   </p>
-  
+
   <script>
     const updateWidth = () => {
       document.getElementById("vw").textContent = window.innerWidth;
@@ -66,47 +67,44 @@
 
   <section id="home" class="hero">
     <div class="hero-image">
-      <img src="public/img/profile.jpg" alt="A picture of Ezequiel" />
+      <img src="public/img/profile.jpg" alt="Foto de Ezequiel" />
     </div>
     <div class="hero-content">
-      <h1>Hello, I'm Ezequiel</h1>
-      <p>A full stack web developer</p>
+      <h1>Hola, soy Ezequiel</h1>
+      <p>Desarrollador web full stack</p>
       <a href="public/docs/Ezequiel_Arroyo_CV.pdf" target="_blank" download class="btn-download">
-        <i class="fa-solid fa-file-arrow-down"></i> Download CV
+      <i class="fa-solid fa-file-arrow-down"></i> Download CV
       </a>
     </div>
   </section>
   <main>
 
     <section id="about" class="about">
-      <h2 class="section-title">ABOUT ME</h2>
+      <h2 class="section-title">SOBRE MÍ</h2>
       <p>
-        I'm a web developer in my 4th year of the Information Systems Engineering program at UTN Buenos Aires. I have a
-        strong foundation in HTML, CSS, and Java—particularly with Spring Boot—and enjoy exploring new technologies to
-        keep improving.
+        Soy desarrollador web y curso el 4.º año de la carrera de Ingeniería en Sistemas de Información en la UTN Buenos Aires. Tengo una sólida base en HTML, CSS y Java —especialmente con Spring Boot— y disfruto explorar nuevas tecnologías para seguir mejorando.
       </p>
       <p>
-        Looking for a role where I can contribute to projects, grow professionally, and join a collaborative team.
-        I'm open to working with new languages, frameworks, or technologies.
+        Busco un rol donde pueda contribuir a proyectos, crecer profesionalmente y formar parte de un equipo colaborativo. Estoy abierto a trabajar con nuevos lenguajes, frameworks o tecnologías.
       </p>
     </section>
 
     <section id="education" class="education">
-      <h2 class="section-title">EDUCATION</h2>
+      <h2 class="section-title">EDUCACIÓN</h2>
       <div class="education-grid">
         <div class="education-item">
           <h3>Universidad Tecnológica Nacional (UTN) – Buenos Aires</h3>
-          <p>Information Systems Engineering – Currently in 4th year</p>
+          <p>Ingeniería en Sistemas de Información – Actualmente cursando 4.º año</p>
         </div>
         <div class="education-item">
           <h3>Babar Bilingual School</h3>
-          <p>Bilingual High School Diploma in Social Sciences – Graduated in 2017</p>
+          <p>Bachiller Bilingüe en Ciencias Sociales – Egresado en 2017</p>
         </div>
       </div>
     </section>
 
     <section id="skills" class="skills">
-      <h2 class="section-title">SKILLS</h2>
+      <h2 class="section-title">HABILIDADES</h2>
       <ul class="skills-list">
         <li class="skill-item contrast-surface" data-skill="HTML">HTML</li>
         <li class="skill-item contrast-surface" data-skill="CSS">CSS</li>
@@ -119,13 +117,12 @@
     </section>
 
     <section id="projects" class="projects">
-      <h2 class="section-title">PROJECTS</h2>
+      <h2 class="section-title">PROYECTOS</h2>
       <div class="project-grid">
         <div class="project-item contrast-surface" data-tags="Java SpringBoot Git">
           <div class="project-content">
-            <h3>MetaMapa - Collaborative Mapping System</h3>
-            <p>System developed in Java with Spring Boot for the collaborative mapping of geolocated events. It allows
-              the integration of data from multiple sources and was created as part of the TPA DDSI 2025 (UTN).</p>
+            <h3>MetaMapa - Sistema de Mapeo Colaborativo</h3>
+            <p>Sistema desarrollado en Java con Spring Boot para el mapeo colaborativo de eventos geolocalizados. Permite la integración de datos de múltiples fuentes y fue creado como parte del TPA DDSI 2025 (UTN).</p>
 
           </div>
           <footer class="project-footer">
@@ -134,14 +131,13 @@
               <span class="tag tag-springboot">Spring Boot</span>
               <span class="tag tag-git">Git</span>
             </div>
-            <a href="#" target="_blank"><s>Live Demo</s></a> | <a href="#" target="_blank"><s>GitHub</s></a>
+            <a href="#" target="_blank"><s>Demo en vivo</s></a> | <a href="#" target="_blank"><s>GitHub</s></a>
           </footer>
         </div>
         <div class="project-item contrast-surface" data-tags="html css javascript git">
           <div class="project-content">
-            <h3>Personal Portfolio</h3>
-            <p>Personal portfolio inspired by a minimalist aesthetic, featuring responsive design, interactive filters,
-              and modular code.</p>
+            <h3>Portfolio Personal</h3>
+            <p>Portfolio personal inspirado en una estética minimalista, con diseño adaptable (responsive), filtros interactivos y código modular.</p>
 
           </div>
           <footer class="project-footer">
@@ -158,7 +154,7 @@
     </section>
 
     <section id="contact" class="contact">
-      <h2 class="section-title">CONTACT</h2>
+      <h2 class="section-title">CONTACTO</h2>
       <ul class="contact-list">
         <li>
           <i class="icon fa-brands fa-linkedin"></i>
@@ -173,7 +169,7 @@
   </main>
 
   <footer class="footer-page">
-    <p>&copy; 2025 Ezequiel Arroyo. All rights reserved.</p>
+    <p>&copy; 2025 Ezequiel Arroyo. Todos los derechos reservados.</p>
   </footer>
 </body>
 
